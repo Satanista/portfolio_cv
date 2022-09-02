@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from portfolio_cv.views import main_view
+from portfolio_cv.views import main_view, progress
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', main_view, name='main'),
     path('', main_view),
+    path('progress/', progress),
 ]

@@ -26,10 +26,6 @@ p {
   text-align: center;
 }
 
-.skillbar {
-  cursor: pointer;
-}
-
 .hide {
   display: none;
 }
@@ -291,88 +287,132 @@ p {
 
 /* about section */
 
-/* Skill bars */
 
-.container-skillbar {
-  width: 100%;
-  padding-top: 30px;
-  padding-right: 2%;
-  padding-left: 2%;
-  height: auto;
-  overflow: none;
+.skills-content{
+  margin-top: 2em;
 }
-.skillbar {
+
+.title-skills{
+  font-size: 2em;
+  margin-top: 4em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transition: all 400ms ease-in-out;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.bar {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.skill {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+
+.speech-bubble {
+  font-size: 0.75;
+  line-height: 2em;
+  position: absolute;
+  top: -2.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+}
+
+.html{
+  left: calc(90% - 1.5em);
+}
+.css{
+  left: calc(80% - 1.5em);
+}
+.photoshop{
+  left: calc(75% - 1.5em);
+}
+.rails{
+  left: calc(45% - 1.5em);
+}
+.jquery{
+  left: calc(30% - 1.5em);
+}
+.php{
+  left: calc(20% - 1.5em);
+}
+
+.speech-bubble:after{
+  border: 0.5em solid transparent;
+  content: '';
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer{
+  height: 1.25em;
+  background: #EEEEEE;
   position: relative;
-  display: block;
-  margin-bottom: 15px;
-  width: 100%;
-  background: #efefef;
-  height: 30px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -ms-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color;
+  border-radius: 0.3em;
 }
 
-.skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110px;
-  font-weight: bold;
-  font-size: 13px;
-  color: #fff;
-  background: #6adcfa;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.bar-inner{
+  width: 0;
+  height: 1.25em;
+  border-radius: 0.3em;
 }
 
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0 20px;
-  height: 30px;
-  line-height: 30px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.ht, .html{
+  background: #red;
 }
 
-.skillbar-bar {
-  height: 30px;
-  width: 0px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+.html:after{
+  border-top-color: #fdeeed;
 }
 
-.skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 30px;
-  line-height: 30px;
-  color: #ffffff;
-  color: rgba(0, 0, 0, 0.5);
+.cs, .css{
+  background: #fde4e1;
 }
 
+.css:after{
+  border-top-color: #fde4e1;
+}
+
+.phs, .photoshop{
+  background: #fcd9d5;
+}
+
+.photoshop:after{
+  border-top-color: #fcd9d5;
+}
+
+.ra, .rails{
+  background: #fcd9c4;
+}
+
+.rails{
+  border-top-color: #fcd9c4;
+}
+
+.ra, .jquery{
+  background: #fcd9c4;
+}
+
+.jquery{
+  border-top-color: #fcd9c4;
+}
+
+.ph, .php{
+  background: #fcd9c4;
+}
+
+.php{
+  border-top-color: #fcd9c4;
+}
 /* portfolio section */
 
 .content {
